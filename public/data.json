@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Galapagos Islands",
+    "price": "$2,339",
+    "images": "https://images.unsplash.com/photo-1523949401498-2e8aefd791e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "description": "$1,377.82"
+  },
+  {
+    "id": "2",
+    "name": "Amazon Amazing",
+    "price": "$1,406",
+    "images": "https://images.unsplash.com/photo-1591081658714-f576fb7ea3ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    "description": "$2,218.14"
+  },
+  {
+    "id": "3",
+    "name": "Africa Travel",
+    "price": "$1,275",
+    "images": "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80",
+    "description": "$3,692.90"
+  }
+]
