@@ -6,9 +6,11 @@ import Services from "../Services/Services";
 
 const Home = () => {
   return (
-    <div className="container-fluid">
+    <div>
       <Slider></Slider>
-      <Services></Services>
+      <div className="container">
+        <Services></Services>
+      </div>
       <Gallery></Gallery>
       <Footer></Footer>
     </div>
