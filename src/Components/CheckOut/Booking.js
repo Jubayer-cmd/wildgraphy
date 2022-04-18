@@ -2,7 +2,7 @@ import React from "react";
 
 const Booking = () => {
   return (
-    <div>
+    <div className="fan">
       <h1 className="text-center my-4 text-warning">
         Thank you for the booking
       </h1>

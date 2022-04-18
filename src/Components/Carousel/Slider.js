@@ -12,8 +12,8 @@ const Slider = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Explore the wild place</h3>
+            <p>Travel and Capter wild animales With me</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -24,21 +24,24 @@ const Slider = () => {
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Travel the world </h3>
+            <p>
+              Expreienced then 30 times wild place and Award winning
+              Photographar
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid"
-            src="https://images.unsplash.com/photo-1530545232169-783ad58b026f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+            src="https://images.unsplash.com/photo-1518443855757-dfadac7101ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             alt="Third slide"
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Capture Animal and learn about wild</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Enjoy The Great place and learn about diffrent culture and place
             </p>
           </Carousel.Caption>
         </Carousel.Item>

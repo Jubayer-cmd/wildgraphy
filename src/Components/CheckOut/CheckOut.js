@@ -8,7 +8,7 @@ const CheckOut = () => {
     navigate("/booking");
   };
   return (
-    <div className="register-form">
+    <div className="register-form fan">
       <h2 className="text-center m-3 text-primary">CheckOut</h2>
       <form>
         <input type="text" name="Name" id="" placeholder="Name" required />

@@ -32,8 +32,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="register-form">
-      <h2 style={{ textAlign: "center" }}>Please Register</h2>
+    <div className="register-form fan">
+      <h2 className="text-center text-primary m-3">Register</h2>
       <form onSubmit={handleRegister}>
         <input type="text" name="name" id="" placeholder="Your Name" />
 

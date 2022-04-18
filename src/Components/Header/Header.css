@@ -129,3 +129,6 @@
     object-fit: cover;
   }
 }
+.fan {
+  height: 100vh;
+}

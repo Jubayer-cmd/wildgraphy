@@ -15,7 +15,9 @@ const Service = ({ service }) => {
         <Card.Body>
           <Card.Title>Package: {name}</Card.Title>
           <Card.Title>Price: {price}</Card.Title>
-          <Card.Text>Description: {description}</Card.Text>
+          <Card.Text>
+            <b>Description:</b> {description}
+          </Card.Text>
           <Button
             className="text-center"
             variant="success"

@@ -4,20 +4,20 @@
     "name": "Galapagos Islands",
     "price": "$2,339",
     "images": "https://images.unsplash.com/photo-1523949401498-2e8aefd791e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "description": "$1,377.82"
+    "description": "The Galápagos Islands is a volcanic archipelago in the Pacific Ocean. It's considered one of the world's foremost destinations for wildlife-viewing. A province of Ecuador, it lies about 1,000km off its coast. Its isolated terrain shelters a diversity of plant and animal species, many found nowhere else."
   },
   {
     "id": "2",
     "name": "Amazon Amazing",
     "price": "$1,406",
     "images": "https://images.unsplash.com/photo-1591081658714-f576fb7ea3ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-    "description": "$2,218.14"
+    "description": "The Amazon rainforest, covering much of northwestern Brazil and extending into Colombia, Peru and other South American countries, is the worlds largest tropical rainforest, famed for its biodiversity. Its crisscrossed by thousands of rivers, including the powerful Amazon."
   },
   {
     "id": "3",
     "name": "Africa Travel",
     "price": "$1,275",
     "images": "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80",
-    "description": "$3,692.90"
+    "description": "Great wildlife safaris to Africa. Africa's animal-filled plains and forests live on. The vast wilderness areas are home to the earth's biggest concentrations of large mammals, from elephants and giraffes to hippos and zebras, to lions, leopards and cheetahs.See Beatiful animals"
   }
 ]

@@ -47,9 +47,9 @@ const Login = () => {
     }
   };
   return (
-    <div>
+    <div className="fan">
       <div className="register-form">
-        <h2 style={{ textAlign: "center" }}>Login Here</h2>
+        <h2 className="text-center text-primary m-3">Login</h2>
         <form onSubmit={handleSubmit}>
           <input
             ref={emailRef}
