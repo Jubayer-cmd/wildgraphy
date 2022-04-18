@@ -2,6 +2,8 @@ import { signOut } from "firebase/auth";
 import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import auth from "../../firebase.init";
 import "./Header.css";
 const Header = () => {
@@ -10,6 +12,7 @@ const Header = () => {
   const [user] = useAuthState(auth);
   const logout = () => {
     signOut(auth);
+    toast("Logging Out successfully");
   };
   return (
     <>
@@ -75,6 +78,7 @@ const Header = () => {
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
         </div>
+        <ToastContainer />
       </nav>
     </>
   );

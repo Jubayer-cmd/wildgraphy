@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Spinner } from "react-bootstrap";
 import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
@@ -18,10 +19,6 @@ const Signup = () => {
   const navigateLogin = () => {
     navigate("/login");
   };
-
-  if (loading || updating) {
-    return <div></div>;
-  }
 
   const handleRegister = async (event) => {
     event.preventDefault();
@@ -55,6 +52,16 @@ const Signup = () => {
           placeholder="Password"
           required
         />
+        {loading && (
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        )}
+        {updating && (
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">updating...</span>
+          </Spinner>
+        )}
         <input
           onClick={() => setAgree(!agree)}
           type="checkbox"

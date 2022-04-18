@@ -1,18 +1,22 @@
-import React from "react";
-import { Button } from "react-bootstrap";
+import React, { useRef } from "react";
+import { Button, Spinner } from "react-bootstrap";
 import {
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import auth from "../../firebase.init";
 
 const Login = () => {
   let ErrorOccur;
+  const emailRef = useRef("");
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle] = useSignInWithGoogle(auth);
-
+  const [sendPasswordResetEmail, updating] = useSendPasswordResetEmail(auth);
   const navigate = useNavigate();
   const navigateSignUp = () => {
     navigate("/signup");
@@ -33,12 +37,22 @@ const Login = () => {
     const password = event.target.password.value;
     signInWithEmailAndPassword(email, password);
   };
+  const resetPassword = async (event) => {
+    const email = emailRef.current.value;
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Email sent!");
+    } else {
+      toast("please enter your Email address!");
+    }
+  };
   return (
     <div>
       <div className="register-form">
         <h2 style={{ textAlign: "center" }}>Login Here</h2>
         <form onSubmit={handleSubmit}>
           <input
+            ref={emailRef}
             type="email"
             name="email"
             id=""
@@ -60,6 +74,16 @@ const Login = () => {
             value="Login"
           />
           {ErrorOccur}
+          {loading && (
+            <Spinner animation="border" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          )}
+          {updating && (
+            <Spinner animation="border" role="status">
+              <span className="visually-hidden">updating...</span>
+            </Spinner>
+          )}
           <h5 className="my-2 mx-5">OR</h5>
           <Button
             className="btn btn-success py-2 my-3"
@@ -80,6 +104,16 @@ const Login = () => {
             Please Register
           </Link>
         </p>
+        <p>
+          Forget Password?{" "}
+          <button
+            className="btn btn-link text-primary pe-auto text-decoration-none"
+            onClick={resetPassword}
+          >
+            Reset Password
+          </button>
+        </p>
+        <ToastContainer />
       </div>
     </div>
   );
