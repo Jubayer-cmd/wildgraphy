@@ -6,7 +6,7 @@ import Services from "../Services/Services";
 
 const Home = () => {
   return (
-    <div>
+    <div className="container-fluid">
       <Slider></Slider>
       <Services></Services>
       <Gallery></Gallery>
