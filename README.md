@@ -1,6 +1,6 @@
 # Wild-graphy With React app
 
-[Live-Website: Wild-Graphy](https://idyllic-dragon-e573dd.netlify.app/)
+[Live-Website: Wild-Graphy](https://wild-graphy.web.app/)
 
 - 5 Things in this react app
 

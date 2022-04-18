@@ -37,7 +37,7 @@ const Login = () => {
     const password = event.target.password.value;
     signInWithEmailAndPassword(email, password);
   };
-  const resetPassword = async (event) => {
+  const resetPassword = async () => {
     const email = emailRef.current.value;
     if (email) {
       await sendPasswordResetEmail(email);
